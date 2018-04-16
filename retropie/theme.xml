@@ -1,0 +1,66 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+<view name="system">
+ <image name="background_color" extra="true">
+  <path>./SLBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+</view>
+
+<view name="system, basic, detailed, grid, video">
+ <image name="logo">
+  <path>./../_art/logo.png</path>
+ </image>
+</view>
+
+<view name="basic, detailed, grid, video">
+ <image name="background_color" extra="true">
+  <path>./GMBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+
+<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher, md_developer, md_publisher">
+<fontSize>0.026</fontSize>
+</text>
+
+<text name="md_lbl_genre">
+	<pos>0.754 1.50</pos>
+</text>
+
+<text name="md_genre">
+<fontSize>0.0235</fontSize>
+<pos>0.81 1.495</pos>
+</text>
+
+<text name="md_lbl_playcount">
+	<pos>0.775 1.525</pos>
+</text>
+
+<text name="md_playcount">
+<fontSize>0.04</fontSize>
+<pos>0.89 1.518</pos>
+</text>
+
+<text name="md_players">
+<fontSize>0.05</fontSize>
+<pos>0.905 0.266</pos>
+</text>
+
+<datetime name="md_releasedate, md_lastplayed">
+<fontSize>0.026</fontSize>
+</datetime>
+
+<rating name="md_rating">
+<filledPath>./../_art/empty.png</filledPath>
+<unfilledPath>./../_art/empty.png</unfilledPath>
+</rating>
+
+</view>
+
+</theme>
