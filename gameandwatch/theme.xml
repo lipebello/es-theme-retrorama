@@ -1,0 +1,42 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+<view name="system">
+ <image name="background_color" extra="true">
+  <path>./SLBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+</view>
+
+<view name="system, basic, detailed, grid, video">
+ <image name="logo">
+  <path>./../_art/logo.png</path>
+ </image>
+</view>
+
+<view name="basic, detailed, grid, video">
+ <image name="background_color" extra="true">
+  <path>./GMBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+
+<textlist name="gamelist">
+<selectorImagePath>./../_art/icongw.png</selectorImagePath>
+<primaryColor>232323</primaryColor>
+<selectedColor>232323</selectedColor>
+<secondaryColor>535353</secondaryColor>
+<fontSize>0.028</fontSize>
+</textlist>
+
+<rating name="md_rating">
+<filledPath>./../_art/fullgw.png</filledPath>
+</rating>
+
+</view>
+
+</theme>

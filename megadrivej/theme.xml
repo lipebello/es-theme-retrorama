@@ -1,0 +1,79 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+<view name="system">
+ <image name="background_color" extra="true">
+  <path>./SLBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+</view>
+
+<view name="system, basic, detailed, grid, video">
+ <image name="logo">
+  <path>./../_art/logo.png</path>
+ </image>
+</view>
+
+<view name="basic, detailed, grid, video">
+ <image name="background_color" extra="true">
+  <path>./GMBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+
+<textlist name="gamelist">
+<selectorImagePath>./../_art/iconj.png</selectorImagePath>
+<selectedColor>cccccc</selectedColor>
+<secondaryColor>808080</secondaryColor>
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.028</fontSize>
+</textlist>
+
+<text name="md_description">
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.027</fontSize>
+</text>
+
+<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher, md_developer, md_publisher">
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.026</fontSize>
+</text>
+
+<text name="md_lbl_genre">
+	<pos>0.754 0.50</pos>
+</text>
+
+<text name="md_genre">
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.0235</fontSize>
+<pos>0.81 0.495</pos>
+</text>
+
+<text name="md_playcount">
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.04</fontSize>
+<pos>0.89 0.518</pos>
+</text>
+
+<text name="md_players">
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.05</fontSize>
+<pos>0.905 0.266</pos>
+</text>
+
+<datetime name="md_releasedate, md_lastplayed">
+<fontPath>./../_art/jap.ttf</fontPath>
+<fontSize>0.026</fontSize>
+</datetime>
+
+<rating name="md_rating">
+<filledPath>./../_art/fullj.png</filledPath>
+</rating>
+
+</view>
+
+</theme>

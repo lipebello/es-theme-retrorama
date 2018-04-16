@@ -1,0 +1,76 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+<view name="system">
+ <image name="background_color" extra="true">
+  <path>./SLBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+</view>
+
+<view name="system, basic, detailed, grid, video">
+ <image name="logo">
+  <path>./../_art/logo.png</path>
+ </image>
+</view>
+
+<view name="basic, detailed, grid, video">
+ <image name="background_color" extra="true">
+  <path>./GMBG.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+
+<textlist name="gamelist">
+<selectorImagePath>./../_art/iconh.png</selectorImagePath>
+<selectedColor>8cc63f</selectedColor>
+<secondaryColor>ae16d3</secondaryColor>
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.028</fontSize>
+</textlist>
+
+<text name="md_description">
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.028</fontSize>
+</text>
+
+<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher, md_developer, md_publisher">
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.028</fontSize>
+</text>
+
+<text name="md_genre">
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.025</fontSize>
+<pos>0.80 0.488</pos>
+</text>
+
+<text name="md_playcount">
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.06</fontSize>
+<pos>0.87 0.518</pos>
+</text>
+
+<text name="md_players">
+<color>f0f0f095</color>
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.07</fontSize>
+<pos>0.91 0.266</pos>
+</text>
+
+<datetime name="md_releasedate, md_lastplayed">
+<fontPath>./../_art/horror.ttf</fontPath>
+<fontSize>0.028</fontSize>
+</datetime>
+
+<rating name="md_rating">
+<filledPath>./../_art/fullh.png</filledPath>
+</rating>
+
+</view>
+
+</theme>
