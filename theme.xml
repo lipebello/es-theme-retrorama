@@ -97,7 +97,7 @@ font: comic.otf
 	<scrollSound>./_art/scroll_sound.wav</scrollSound>
 	<alignment>left</alignment>
 	<pos>0.04 0.23</pos>
-	<size>0.415 0.67</size>
+	<size>0.415 0.674</size>
 	<fontSize>0.022</fontSize>
 	<lineSpacing>1</lineSpacing>
 	<horizontalMargin>0.04</horizontalMargin>
@@ -142,7 +142,7 @@ font: comic.otf
 	<scrollSound>./_art/scroll_sound.wav</scrollSound>
 	<alignment>left</alignment>
 	<pos>0.04 0.23</pos>
-	<size>0.415 0.67</size>
+	<size>0.415 0.674</size>
 	<fontSize>0.022</fontSize>
 	<lineSpacing>1</lineSpacing>
 	<horizontalMargin>0.04</horizontalMargin>
@@ -252,7 +252,7 @@ font: comic.otf
 
 </view>
 
-<view name="detailed">
+<view name="detailed, video">
 
 <image name="md_image">
 	<origin>.5 .5</origin>
@@ -298,9 +298,9 @@ font: comic.otf
 	<origin>.5 .5</origin>
 	<pos>0.6885 0.222</pos>
 	<maxSize>0.317 0.359</maxSize>
-	<delay>0.3</delay>
+	<delay>0.5</delay>
 	<showSnapshotNoVideo>true</showSnapshotNoVideo>
-	<showSnapshotDelay>false</showSnapshotDelay>
+	<showSnapshotDelay>true</showSnapshotDelay>
 </video>
 
 <image name="md_marquee">
