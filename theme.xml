@@ -12,312 +12,258 @@ font: comic.otf
 -->
 
 <theme>
+<formatVersion>4</formatVersion>
 
-	<formatVersion>4</formatVersion>
-	
-	<!-- Carousel (Hide white bar and number of games-->
+<!-- Carousel (Hide white bar and number of games-->
 <feature supported="carousel">
+  <view name="system">
+    <carousel name="systemcarousel">
+      <pos>0 0</pos>
+      <color>00000000</color>
+      <maxLogoCount>1</maxLogoCount>
+    </carousel>
 
-<view name="system">
-
-<carousel name="systemcarousel">
-	<pos>0 0</pos>
-	<color>00000000</color>
-	<maxLogoCount>1</maxLogoCount>
-</carousel>
-
-<text name="systemInfo">
-    <fontPath>./_art/comic.otf</fontPath>
-	<alignment>right</alignment>
-	<backgroundColor>00000000</backgroundColor>
-	<color>ffcc33</color>
-	<pos>0.010 0.943</pos>
-	<size>0.980 0.050</size>
-	<fontSize>0.025</fontSize>
-</text>
-
-</view>
+    <text name="systemInfo">
+      <fontPath>./_art/comic.otf</fontPath>
+      <alignment>right</alignment>
+      <backgroundColor>00000000</backgroundColor>
+      <color>ffcc33</color>
+      <pos>0.010 0.943</pos>
+      <size>0.980 0.050</size>
+      <fontSize>0.025</fontSize>
+    </text>
+  </view>
 </feature>
+
 <!-- Carousel -->
-
 <view name="system">
+  <image name="background">
+    <tile>true</tile>
+    <color>23232300</color>
+    <path>./_art/white.png</path>
+    <size>1 1</size>
+    <pos>0 0</pos>
+  </image>
 
-<image name="background">
-	<tile>true</tile>
-	<color>23232300</color>
-	<path>./_art/white.png</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
-</image>
-
-<helpsystem name="help">
-    <textColor>ffcc33</textColor>
-    <iconColor>ffcc33</iconColor>
-    <fontPath>./_art/comic.otf</fontPath>
-    <fontSize>0.025</fontSize>
-</helpsystem>
+  <helpsystem name="help">
+      <textColor>ffcc33</textColor>
+      <iconColor>ffcc33</iconColor>
+      <fontPath>./_art/comic.otf</fontPath>
+      <fontSize>0.025</fontSize>
+  </helpsystem>
 </view>
-
 <view name="basic, detailed, grid, video">
+  <image name="background">
+    <tile>true</tile>
+    <color>232323</color>
+    <path>./_art/white.png</path>
+    <size>1 1</size>
+    <pos>0 0</pos>
+    <zIndex>1</zIndex>
+  </image>
 
-<image name="background">
-	<tile>true</tile>
-	<color>232323</color>
-	<path>./_art/white.png</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
-	<zIndex>1</zIndex>
-</image>
-
-<helpsystem name="help">
-	<pos>.007 1.936</pos>
-    <textColor>00000000</textColor>
-    <iconColor>00000000</iconColor>
-    <fontPath>./_art/comic.otf</fontPath>
-    <fontSize>0.016</fontSize>
-</helpsystem>
-
+  <helpsystem name="help">
+    <pos>.007 1.936</pos>
+       <textColor>00000000</textColor>
+       <iconColor>00000000</iconColor>
+       <fontPath>./_art/comic.otf</fontPath>
+      <fontSize>0.016</fontSize>
+  </helpsystem>
 </view>
 
-	
 <view name="basic">
-
-<image name="logo">
-    <path>./_art/logo.png</path>
-</image>
-
-<textlist name="gamelist">
-	<selectorColor>FFFFFFEE</selectorColor>
-	<selectorImagePath>./_art/icon.png</selectorImagePath>
-	<selectedColor>b21212</selectedColor>
-	<selectorHeight>.05</selectorHeight>
-	<primaryColor>EEEEEEEE</primaryColor>
-	<secondaryColor>eac428</secondaryColor>
-	<fontPath>./_art/comic.otf</fontPath>
-	<scrollSound>./_art/scroll_sound.wav</scrollSound>
-	<alignment>left</alignment>
-	<pos>0.04 0.23</pos>
-	<size>0.415 0.674</size>
-	<fontSize>0.022</fontSize>
-	<lineSpacing>1</lineSpacing>
-	<horizontalMargin>0.04</horizontalMargin>
-</textlist>
-
+  <image name="logo">
+      <path>./_art/logo.png</path>
+  </image>
 </view>
 
 <view name="detailed, video">
+  <image name="logo">
+      <path>./_art/logo.png</path>
+  </image>
 
-<image name="logo">
-    <path>./_art/logo.png</path>
-</image>
+  <image name="Help description" extra="trye">
+    <color>FFFFFFEE</color>
+    <path>./_art/help.png</path>
+    <origin>0 0.5</origin>
+    <pos>0.006 0.96</pos>
+    <maxSize>0.478 0.054</maxSize>
+    <zIndex>200</zIndex>
+  </image>
 
-<!--
-<image name="Help marquee" extra="trye">
-	<color>0000FF50</color>
-	<path>./_art/white.png</path>
-	<origin>0 0</origin>
-	<pos>0.53 0.609</pos>
-	<size>0.202 0.09</size>
-	<zIndex>200</zIndex>
-</image>
--->
+  <textlist name="gamelist">
+    <selectorColor>FFFFFFEE</selectorColor>
+    <selectorImagePath>./_art/icon.png</selectorImagePath>
+    <selectedColor>b21212</selectedColor>
+    <selectorHeight>.05</selectorHeight>
+    <primaryColor>EEEEEEEE</primaryColor>
+    <secondaryColor>eac428</secondaryColor>
+    <fontPath>./_art/comic.otf</fontPath>
+    <scrollSound>./_art/scroll_sound.wav</scrollSound>
+    <alignment>left</alignment>
+    <pos>0.04 0.23</pos>
+    <size>0.415 0.674</size>
+    <fontSize>0.022</fontSize>
+    <lineSpacing>1</lineSpacing>
+    <horizontalMargin>0.04</horizontalMargin>
+  </textlist>
 
-<image name="Help description" extra="trye">
-	<color>FFFFFFEE</color>
-	<path>./_art/help.png</path>
-	<origin>0 0.5</origin>
-	<pos>0.006 0.96</pos>
-	<maxSize>0.478 0.054</maxSize>
-	<zIndex>200</zIndex>
-</image>
+  <text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher">
+    <color>232323DD</color>
+    <forceUppercase>1</forceUppercase>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.024</fontSize>
+    <size>0.22 0.01</size>
+  </text>
 
-<textlist name="gamelist">
-	<selectorColor>FFFFFFEE</selectorColor>
-	<selectorImagePath>./_art/icon.png</selectorImagePath>
-	<selectedColor>b21212</selectedColor>
-	<selectorHeight>.05</selectorHeight>
-	<primaryColor>EEEEEEEE</primaryColor>
-	<secondaryColor>eac428</secondaryColor>
-	<fontPath>./_art/comic.otf</fontPath>
-	<scrollSound>./_art/scroll_sound.wav</scrollSound>
-	<alignment>left</alignment>
-	<pos>0.04 0.23</pos>
-	<size>0.415 0.674</size>
-	<fontSize>0.022</fontSize>
-	<lineSpacing>1</lineSpacing>
-	<horizontalMargin>0.04</horizontalMargin>
-</textlist>
+  <text name="md_developer, md_publisher, md_genre, md_playcount">
+    <color>232323DD</color>
+    <forceUppercase>1</forceUppercase>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.020</fontSize>
+    <size>0.18 0.02</size>
+  </text>
 
-<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher">
-	<color>232323DD</color>
-	<forceUppercase>1</forceUppercase>
-	<fontPath>./_art/comic.otf</fontPath>
-	<fontSize>0.024</fontSize>
-	<size>0.22 0.01</size>
-</text>
+  <datetime name="md_releasedate, md_lastplayed">
+    <color>232323DD</color>
+    <forceUppercase>1</forceUppercase>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.020</fontSize>
+    <size>0.23 0.02</size>
+  </datetime>
 
-<text name="md_developer, md_publisher, md_genre, md_playcount">
-	<color>232323DD</color>
-	<forceUppercase>1</forceUppercase>
-	<fontPath>./_art/comic.otf</fontPath>
-	<fontSize>0.020</fontSize>
-	<size>0.18 0.02</size>
-</text>
-	
-<datetime name="md_releasedate, md_lastplayed">
-	<color>232323DD</color>
-	<forceUppercase>1</forceUppercase>
-	<fontPath>./_art/comic.otf</fontPath>
-	<fontSize>0.020</fontSize>
-	<size>0.23 0.02</size>
-</datetime>
+  <text name="md_lbl_rating">
+    <color>23232300</color>
+    <pos>0.750 2.455</pos>
+  </text>
 
-<text name="md_lbl_rating">
-	<color>23232300</color>
-	<pos>0.750 2.455</pos>
-</text>
+  <rating name="md_rating">
+    <pos>0.76 0.423</pos>
+    <size>0.7 0.07</size>
+    <filledPath>./_art/full.png</filledPath>
+    <unfilledPath>./_art/empty.png</unfilledPath>
+  </rating>
 
-	<rating name="md_rating">
-	<pos>0.76 0.423</pos>
-	<size>0.7 0.07</size>
-	<filledPath>./_art/full.png</filledPath>
-	<unfilledPath>./_art/empty.png</unfilledPath>
-	</rating>
+  <text name="md_lbl_players">
+    <color>23232300</color>
+    <pos>0.762 1.12</pos>
+  </text>
 
-<text name="md_lbl_players">
-	<color>23232300</color>
-	<pos>0.762 1.12</pos>
-</text>
+  <text name="md_players">
+    <color>232323DD</color>
+    <forceUppercase>1</forceUppercase>
+    <fontPath>./_art/player.ttf</fontPath>
+    <size>0.18 0.02</size>
+    <pos>0.905 0.256</pos>
+    <fontSize>0.05</fontSize>
+  </text>
 
-	<text name="md_players">
-	<color>232323DD</color>
-	<forceUppercase>1</forceUppercase>
-	<fontPath>./_art/player.ttf</fontPath>
-	<size>0.18 0.02</size>
-	<pos>0.905 0.256</pos>
-	<fontSize>0.05</fontSize>
-	</text>
+  <text name="md_lbl_genre">
+    <pos>0.754 0.495</pos>
+  </text>
 
-<text name="md_lbl_genre">
-	<pos>0.754 0.495</pos>
-</text>
+  <text name="md_genre">
+    <pos>0.81 0.488</pos>
+    <size>0.15 0.02</size>
+  </text>
 
-	<text name="md_genre">
-	<pos>0.81 0.488</pos>
-	<size>0.15 0.02</size>
-	</text>
+  <text name="md_lbl_developer">
+    <pos>0.74 2.94</pos>
+  </text>
 
-<text name="md_lbl_developer">
-	<pos>0.74 2.94</pos>
-</text>
-	
-	<text name="md_developer">
-	<pos>0.53 0.936</pos>
-	</text>
+  <text name="md_developer">
+    <pos>0.53 0.936</pos>
+  </text>
 
-<text name="md_lbl_publisher">
-	<pos>0.745 2.30</pos>
-</text>
-	
-	<text name="md_publisher">
-	<pos>0.72 0.936</pos>
-	</text>
+  <text name="md_lbl_publisher">
+    <pos>0.745 2.30</pos>
+  </text>
 
-<text name="md_lbl_releasedate">
-	<pos>0.74 2.36</pos>
-</text>
+  <text name="md_publisher">
+    <pos>0.72 0.936</pos>
+  </text>
 
-	<datetime name="md_releasedate">
-	<pos>0.9 0.936</pos>
-	</datetime>
+  <text name="md_lbl_releasedate">
+    <pos>0.74 2.36</pos>
+  </text>
 
-<text name="md_lbl_playcount">
-	<pos>0.775 0.525</pos>
-</text>
+  <datetime name="md_releasedate">
+    <pos>0.9 0.936</pos>
+  </datetime>
 
-	<text name="md_playcount">
-	<fontPath>./_art/player.ttf</fontPath>
-	<size>0.18 0.02</size>
-	<pos>0.896 0.518</pos>
-	<fontSize>0.0470</fontSize>
-	</text>
-	
-<text name="md_lbl_lastplayed">
-	<pos>0.74 2.48</pos>
-</text>
+  <text name="md_lbl_playcount">
+    <pos>0.775 0.525</pos>
+  </text>
 
-<datetime name="md_lastplayed">
-	<pos>0.75 2.50</pos>
-</datetime>
+  <text name="md_playcount">
+    <fontPath>./_art/player.ttf</fontPath>
+    <size>0.18 0.02</size>
+    <pos>0.896 0.518</pos>
+    <fontSize>0.0470</fontSize>
+  </text>
 
+  <text name="md_lbl_lastplayed">
+    <pos>0.74 2.48</pos>
+  </text>
+
+  <datetime name="md_lastplayed">
+    <pos>0.75 2.50</pos>
+  </datetime>
 </view>
 
 <view name="detailed, video">
-
-<image name="md_image">
-	<origin>.5 .5</origin>
-	<pos>0.6885 0.222</pos>
-	<maxSize>0.317 0.359</maxSize>
-</image>
-
+  <image name="md_image">
+    <origin>.5 .5</origin>
+    <pos>0.6885 0.222</pos>
+    <maxSize>0.317 0.359</maxSize>
+  </image>
 </view>
+
 <!-- Descriptions BEGIN-->
-
 <view name="video">
-<text name="md_description">
-	<pos>0.53 0.700</pos>
-	<size>0.202 0.221</size>
-	<color>232323DD</color>
-	<fontPath>./_art/comic.otf</fontPath>
-	<fontSize>0.022</fontSize>
-	<alignment>left</alignment>
-	<forceUppercase>0</forceUppercase>
-	<lineSpacing>1</lineSpacing>
-</text>
+  <text name="md_description">
+    <pos>0.53 0.700</pos>
+    <size>0.202 0.221</size>
+    <color>232323DD</color>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.022</fontSize>
+    <alignment>left</alignment>
+    <forceUppercase>0</forceUppercase>
+    <lineSpacing>1</lineSpacing>
+  </text>
 </view>
 
 <view name="detailed">
-<text name="md_description">
-	<pos>0.53 0.606</pos>
-	<size>0.2 0.317</size>
-	<color>232323DD</color>
-	<fontPath>./_art/comic.otf</fontPath>
-	<fontSize>0.026</fontSize>
-	<alignment>left</alignment>
-	<forceUppercase>0</forceUppercase>
-	<lineSpacing>1</lineSpacing>
-</text>
+  <text name="md_description">
+    <pos>0.53 0.606</pos>
+    <size>0.2 0.317</size>
+    <color>232323DD</color>
+    <fontPath>./_art/comic.otf</fontPath>
+    <fontSize>0.026</fontSize>
+    <alignment>left</alignment>
+    <forceUppercase>0</forceUppercase>
+    <lineSpacing>1</lineSpacing>
+  </text>
 </view>
 <!-- Descriitions END -->
 
 <feature supported="video">
+  <view name="video">
+    <video name="md_video">
+      <origin>.5 .5</origin>
+      <pos>0.6885 0.222</pos>
+      <maxSize>0.317 0.359</maxSize>
+      <delay>0.5</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+    </video>
 
-<view name="video">
-
-<video name="md_video">
-	<origin>.5 .5</origin>
-	<pos>0.6885 0.222</pos>
-	<maxSize>0.317 0.359</maxSize>
-	<delay>0.5</delay>
-	<showSnapshotNoVideo>true</showSnapshotNoVideo>
-	<showSnapshotDelay>true</showSnapshotDelay>
-</video>
-
-<image name="md_marquee">
-	<origin>0 0</origin>
-	<pos>0.53 0.609</pos>
-	<maxSize>0.202 0.09</maxSize>
-</image>
-<!--
-<image name="md_image">
-	<origin>1 1</origin>
-	<pos>.847 0.4</pos>
-	<maxSize>0.2 0.2</maxSize>
-	<zIndex>100</zIndex>
-</image>
--->
-</view>
-
+    <image name="md_marquee">
+      <origin>0 0</origin>
+      <pos>0.53 0.609</pos>
+      <maxSize>0.202 0.09</maxSize>
+    </image>
+  </view>
 </feature>
 
 </theme>
